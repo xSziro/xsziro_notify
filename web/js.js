@@ -9,7 +9,6 @@ $(document).ready(function(){
     });
 
     function showNotification(message, title = "Notification", icon = "fa-solid fa-info", color = "#00D8FF", iconcolor = "#FFFFFF", time = 5000) {
-        console.log(time);
         const notificationbox = document.createElement('div');
         notificationbox.style.animation = `slideIn 0.5s ease, fadeOut 0.5s ease ${time/1000}s forwards `
         notificationbox.className = 'notification-box';
