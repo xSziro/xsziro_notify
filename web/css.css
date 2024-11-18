@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Funnel Sans", sans-serif;
+    background: transparent;
+    overflow: hidden;
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+     -khtml-user-select: none; 
+       -moz-user-select: none; 
+        -ms-user-select: none; 
+            user-select: none; 
+}
+
+#notification-container {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.notification {
+    display: flex;
+    align-items: flex-start;
+    background: #1e2a32c8;
+    color: white;
+    padding: 0.5vw;
+    border-radius: 0.2vw;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+    opacity: 1;
+    line-height: 1.2;
+    max-width: 20vw;
+    font-weight: 600;
+    font-size: 125%;
+    gap: 10px;
+    flex-direction: row;
+    border-width: 0 0 8px 0;
+}
+
+.notification .icon {
+    margin-right: 10px;
+    font-size: 20px; 
+    flex-shrink: 0; 
+    width: 2.34vw;
+    height: 4.17vh;
+    border-radius: 1.04vh;
+
+    box-shadow: inset 0 0 5px BLACK;
+}
+@keyframes progress {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.progress-bar {
+    width: 100%;
+    height: 4px;
+    background-color: transparent;
+    border-bottom: 4px solid transparent;
+    animation: progress 10s linear forwards; 
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        transform: translateX(150%);
+    }
+}
+
+.notification-box {
+    animation: slideIn 0.5s ease, fadeOut 0.5s ease 10s forwards; 
+}
+:root {
+    --progress-bar-animation-duration: 2s;
+    --color:#ffffff;
+}
+.progress-bar::before {
+    content: '';
+    position: absolute;
+    bottom: 6px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--color);
+    animation: progress var(--progress-bar-animation-duration) linear forwards;
+}
+#belt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.icon i {
+    text-shadow: 0 0 4px black;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    font-size: 150%;
+    transform: translate(-50%, -50%);
+}
+
+.title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    line-height: 0.9;
+
+}
+
+.message {
+    display: flex;
+    flex-direction: column-reverse;
+    font-size: 1em;
+
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(150%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        transform: translateX(150%);
+    }
+}
