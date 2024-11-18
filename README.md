@@ -1,5 +1,5 @@
 # 📢 FiveM Notifications Script
-FiveM Notifications Script is a lightweight and easy-to-use script that allows you to add custom notifications to your FiveM server. With this script, you can tailor notifications to your needs, featuring different styles, colors, and unique animations to improve player communication.
+FiveM Notifications Script is a lightweight and easy-to-use script that allows you to add custom notifications to your FiveM server. With this script, you can tailor notifications to your needs, featuring different styles, colors, and unique animations to improve player communication.<br/>
 ![image](https://github.com/user-attachments/assets/6bcc5ddb-138e-4865-b496-3ca760896378) ![image](https://github.com/user-attachments/assets/bb800f6f-82da-4661-867c-baaea54f9d33)
 
 
