@@ -5,14 +5,14 @@ FiveM Notifications Script is a lightweight and easy-to-use script that allows y
 
 
 
-## Features:
+## Features 💻
  - **FontAwesome icons**
  - **Synchronization with HUD colors** (if you using mine hud)
-## Installation
+## Installation 🛠️
   - **1.** Download the repository and place it in your FiveM server's resources folder.
   - **2.** Add ensure xsziro_notify to your server.cfg.
   - **3.** Restart your server, and the notifications will be ready to use!
-## Configuration:
+## Configuration ⚙️
   - **config.lua** - easy server customization
    ![image](https://github.com/user-attachments/assets/0cb88823-3893-4cea-9a05-e145f42cfd32)
 
