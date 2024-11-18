@@ -18,6 +18,4 @@ end
 
 
 
-RegisterNUICallback("hideNotification", function(data, cb)
-    cb("ok")
-end)
+
